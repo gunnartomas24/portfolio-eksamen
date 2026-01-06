@@ -1,0 +1,144 @@
+.hero-forside {
+  background-color: var(--accent-1);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 95vh;
+  padding: 20px;
+}
+.hero-forside-tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}
+.h1-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.h1-box {
+  text-align: right;
+  display: block;
+  width: 32vw;
+  background-color: var(--contrast-1);
+}
+.h1-box h1 {
+  color: var(--accent-1);
+  padding: 10px;
+  text-align: center;
+}
+.hero-grow {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+.hero-grow h2:nth-child(1) {
+  font-size: 15vw;
+  color: var(--white);
+  line-height: 0.8;
+  align-items: flex-end;
+  letter-spacing: -0.8vw;
+}
+.hero-grow h2:nth-child(2) {
+  font-size: 7.2vw;
+  color: var(--white);
+  line-height: 0.5;
+  letter-spacing: -0.4vw;
+  padding-bottom: 10vh;
+}
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding-right: 20px;
+  padding-bottom: 10vh;
+}
+.hero-img img {
+  aspect-ratio: 4/5;
+  width: 30vw;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+#h3-forside {
+  width: 210px;
+}
+
+.projekter-forside {
+  height: 100vh;
+  background-color: var(--contrast-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projekter-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 15vw;
+}
+.projekter-cards {
+  transition: transform 0.2s ease;
+}
+.projekter-cards p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.projekter-cards img {
+  display: block;
+  aspect-ratio: 2/3;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+.projekter-cards:hover {
+  transform: translateY(-4px);
+}
+.projekter-cards img:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mereom-forside {
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 4.5fr 5.5fr;
+}
+.mereom-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mereom-img img {
+  aspect-ratio: 4/5;
+  width: 30vw;
+  object-fit: cover;
+  padding-right: 40px;
+}
+.mereom-tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.mereom-tekst .h3-var1 {
+  padding: 2px 10px;
+  width: 270px;
+  margin-bottom: 5px;
+}
+.mereom-tekst p {
+  max-width: 50ch;
+  text-align: left;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  margin-bottom: 20px;
+}
