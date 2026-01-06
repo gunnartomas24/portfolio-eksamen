@@ -1,0 +1,107 @@
+.hero-mereom {
+  background-color: var(--contrast-1);
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: auto;
+  min-height: 95vh;
+  min-height: 95dvh;
+  padding: 20px;
+}
+.hero-mereom-tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+}
+.h1-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.h1-box {
+  text-align: left;
+  display: block;
+  width: 34vw;
+  background-color: var(--accent-1);
+}
+.h1-box h1 {
+  color: var(--contrast-1);
+  padding: 10px;
+  text-align: center;
+}
+.hero-grow {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+.hero-grow h2:nth-child(1) {
+  font-size: 15vw;
+  color: var(--black-1);
+  line-height: 0.8;
+  align-items: flex-end;
+  letter-spacing: -0.8vw;
+}
+.hero-grow h2:nth-child(2) {
+  font-size: 7.2vw;
+  color: var(--black-1);
+  line-height: 0.5;
+  letter-spacing: -0.4vw;
+  padding-bottom: 10vh;
+}
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding-left: 20px;
+  padding-bottom: 10vh;
+}
+.hero-img img {
+  aspect-ratio: 4/5;
+  width: 30vw;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.section-tekst h3:nth-child(1) {
+  width: 295px;
+}
+
+.projektet-div {
+  background-color: var(--accent-1);
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.projektet-div .h2-var2 {
+  font-size: 7.5rem;
+  padding-bottom: 5px;
+  padding-top: 50px;
+}
+.erfaring-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20vw;
+}
+.erfaring-grid > div {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.erfaring-grid dl dt + dd {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.erfaring-grid dl dd + dd {
+  padding-bottom: 14px;
+}
+.erfaring-linje {
+  flex: 0 0 2px;
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--accent-3);
+  border-radius: 1px;
+  margin: 0 24px;
+}
