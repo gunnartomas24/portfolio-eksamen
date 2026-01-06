@@ -1,0 +1,202 @@
+/*------------ Reset -----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+dialog {
+  border: none;
+  padding: 0;
+}
+main {
+  background-color: var(--white);
+}
+::selection {
+  background-color: rgba(42, 127, 85, 0.7);
+}
+/*---------- Variabler ---------*/
+
+html {
+  --white: #f0e9da;
+  --black-1: #2e2e2e;
+  --black-2: #4e4e4e;
+  --black-3: #1f1f1f;
+  --accent-1: #2a7f55;
+  --accent-3: #1e5238;
+  --contrast-1: #ff8b4c;
+  --contrast-3: #c35d25;
+
+  accent-color: var(--accent-1);
+
+  --serif: "Lora", serif;
+  --sans: "League Spartan", sans-serif;
+  --para: "Lato", sans-serif;
+}
+
+/*---------- Tekst ---------*/
+
+h1 {
+  font-family: var(--serif);
+  font-size: 8.75rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: -0.5rem;
+}
+
+.h2-var1 {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.h2-var2 {
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 8.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.5rem;
+  text-transform: uppercase;
+}
+
+.h3-var1 {
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.24rem;
+  background-color: var(--accent-1);
+  padding: 2px;
+}
+.h3-var2 {
+  color: var(--black-1);
+  font-family: var(--sans);
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.36rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: var(--contrast-1);
+  font-family: var(--sans);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.12rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--black-3);
+  text-align: justify;
+  font-family: var(--para);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.stor-p {
+  font-size: 2.5rem;
+}
+
+.stor-a {
+  color: var(--contrast-1);
+  text-decoration: none;
+  font-family: var(--para);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.stor-a::after {
+  content: "›";
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.stor-a:hover {
+  color: var(--contrast-3);
+}
+.stor-a:hover::after {
+  color: var(--contrast-3);
+  transform: translateX(4px);
+}
+
+a {
+  text-decoration: none;
+}
+a p {
+  color: var(--white);
+}
+
+.menu li a {
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.08rem;
+  text-transform: uppercase;
+}
+
+/*---------- Header ---------*/
+
+header {
+  background-color: var(--accent-1);
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.logo-wrap {
+  justify-self: center;
+  align-content: center;
+  grid-column: 2;
+  width: 85px;
+  height: auto;
+  margin-left: 10px;
+}
+nav {
+  grid-column: 3;
+  margin-right: 3vw;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.burger {
+  display: none;
+}
