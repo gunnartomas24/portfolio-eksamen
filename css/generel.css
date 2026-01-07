@@ -99,6 +99,7 @@ h4 {
   line-height: normal;
   letter-spacing: -0.08rem;
   text-transform: uppercase;
+  text-align: left;
 }
 
 h5 {
@@ -143,6 +144,20 @@ p {
 .stor-a:hover::after {
   color: var(--contrast-3);
   transform: translateX(4px);
+}
+.ligner-a {
+  color: var(--contrast-1);
+  text-decoration: none;
+  font-family: var(--para);
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.ligner-a::after {
+  content: "›";
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
 dt {
@@ -234,6 +249,14 @@ nav {
   margin: 0;
   padding: 0;
   text-align: right;
+}
+.menu li,
+.menu-burger li {
+  transition: scale 0.15s ease;
+}
+.menu li:hover,
+.menu-burger li:hover {
+  scale: 115%;
 }
 
 .burger {
