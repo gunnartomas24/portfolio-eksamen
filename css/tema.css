@@ -285,3 +285,131 @@ details[open] summary .faq-expand {
 details p {
   margin-left: 3.9rem;
 }
+@media (max-width: 1024px) {
+  .hero-tema {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .hero-tema-img {
+    justify-content: flex-end;
+    padding-right: 0;
+    padding-bottom: 2vh;
+    padding-top: 3vh;
+  }
+  .hero-tema-img img {
+    aspect-ratio: 9/10;
+    width: 50vw;
+    margin: 0;
+    padding-right: 0;
+  }
+  .h1-box h1 {
+    padding: 5px;
+  }
+  .h1-flex {
+    justify-content: flex-start;
+  }
+  .h1-box {
+    width: 50vw;
+    margin-bottom: -20px;
+  }
+  .hero-grow {
+    width: 90vw;
+  }
+  .hero-tema-tekst {
+    justify-content: flex-start;
+    padding: 5vw;
+  }
+  .hero-grow h2:nth-child(1) {
+    font-size: 11vw;
+    line-height: 0.8;
+    letter-spacing: -0.35vw;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .hero-grow h2:nth-child(2) {
+    line-height: 0.8;
+  }
+  .h2-t2 {
+    font-size: 49vw;
+    letter-spacing: -3.8vw;
+    padding-top: 5px;
+  }
+  .h2-t3 {
+    font-size: 37vw;
+    letter-spacing: -2.4vw;
+    padding-top: 5px;
+  }
+  .h2-t4 {
+    font-size: 13vw;
+    letter-spacing: -0.8vw;
+    line-height: 3;
+    padding-top: 8px;
+  }
+  .h2-t5 {
+    font-size: 25vw;
+    letter-spacing: -1.9vw;
+    margin-left: 1px;
+    padding-top: 0;
+  }
+  .section-tekst h3:nth-child(1) {
+    width: 78px;
+  }
+  .tema-faq .h3-var1 {
+    width: 195px;
+  }
+
+  .projektet-div {
+    padding: 50px 30px;
+  }
+  .projektet-div h2 {
+    margin-bottom: 20px;
+  }
+  .projektet-grid {
+    grid-template-columns: 1fr;
+    margin: 0 10vw;
+  }
+
+  dialog header {
+    padding: 15px 20px;
+  }
+  dialog header:first-child {
+    padding-left: 35px;
+  }
+  .dialog-img-flex {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 10vw;
+  }
+  .dialog-img-flex img {
+    height: clamp(200px, 25vh, 350px);
+  }
+  .dialog-tekst-grid {
+    order: -1;
+    grid-template-columns: 1fr;
+    margin: 0 10vw;
+    padding-bottom: 3vh;
+  }
+
+  .tema-faq {
+    padding: 4vh 10vw;
+  }
+  details {
+    margin: 30px 0;
+  }
+  summary {
+    font-size: 1.8rem;
+    letter-spacing: -0.12rem;
+  }
+  details p {
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .hero-tema-img {
+    padding-left: 0;
+  }
+  .hero-tema-img img {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
